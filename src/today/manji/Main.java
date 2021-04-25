@@ -1,6 +1,7 @@
 package today.manji;
 
 import today.manji.linkedList.LinkedList;
+import today.manji.stack.Expression;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
@@ -21,6 +22,14 @@ public class Main {
         System.out.println("------Reverse String--------");
 
         System.out.println(reverseString("Manji"));
+
+        System.out.println("------Balanced Expression--------");
+
+        var expression = new Expression();
+
+        System.out.println(expression.isBalanced("[452]"));
+
+
     }
 
     public static String reverseString(String str) {
