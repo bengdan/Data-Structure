@@ -2,6 +2,7 @@ package today.manji;
 
 import today.manji.linkedList.LinkedList;
 import today.manji.stack.Expression;
+import today.manji.stack.MyStack;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
@@ -28,6 +29,16 @@ public class Main {
         var expression = new Expression();
 
         System.out.println(expression.isBalanced("[452]"));
+
+        System.out.println("------My Stack--------");
+
+        var myStack = new MyStack();
+        myStack.push(1);
+        myStack.push(2);
+        myStack.push(3);
+        myStack.pop();
+        System.out.println(myStack.peek());
+        System.out.println(myStack);
 
 
     }
